@@ -5,12 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <TextView
+        android:layout_marginStart="50dp"
+        android:id="@+id/len"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Length"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="18sp"
+
+        />
 <Spinner
-    android:layout_marginTop="50dp"
+    android:layout_marginTop="42dp"
     android:layout_centerHorizontal="true"
     android:id="@+id/spinner"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@+id/len"/>
     <TextView
         android:id="@+id/set_password"
         android:layout_width="150dp"
@@ -20,6 +32,7 @@
         android:textSize="20sp"
         android:layout_centerVertical="true"
         android:layout_marginStart="50dp"
+        android:textColor="@color/black"
 
         />
     <Button
@@ -29,7 +42,8 @@
         android:text="copy to Clipboard"
         android:layout_toEndOf="@id/set_password"
         android:layout_centerVertical="true"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
         />
     <Button
         android:id="@+id/generate_password"
